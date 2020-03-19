@@ -22,7 +22,6 @@ axis on, axis normal, hold on;
 figure(3);
 imshow(imgRGB); hold on; title("Detect Result");
 for k = 1:length(lines)
-    % 繪製各條線
     xy = [lines(k).point1; lines(k).point2];
     plot(xy(:,1),xy(:,2),'LineWidth',3,'Color','green');   
 end

@@ -1,13 +1,18 @@
+% RGB to GRAY
 imgRGB = imread("road.jpg");
 imgGray = rgb2gray(imgRGB);
 
+% Edge Detection
 imgEdge_bad = edge(imgGray, 'canny');
 imgBlur = imgaussfilt(imgGray, 10);
 imgEdge = edge(imgBlur, 'canny');
+
+% Hough Transform
 [H, T, R] = hough(imgEdge, 'RhoResolution', 0.5, 'ThetaResolution', 0.5);
 peakValue = houghpeaks(H, 10);
 lines = houghlines(imgEdge, T, R, peakValue,'FillGap',1000,'MinLength',3)
 
+% Plot
 figure(1);
 subplot(1,5,1); imshow(imgRGB);  title("RGB Image");
 subplot(1,5,2); imshow(imgGray); title("Gray Image");

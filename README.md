@@ -16,6 +16,5 @@ Make some projects relating to computer vision
 ### [03：Boundary Following](https://github.com/tailer954/ComputerVision/blob/master/03_Boundary%20Following/rice_count.m)
 >
 >
-![](https://github.com/tailer954/ComputerVision/blob/master/03_Boundary%20Following/Boundary%20Following%20Result.JPG)
-![](https://github.com/tailer954/ComputerVision/blob/master/03_Boundary%20Following/Preprocessing.JPG)
+![](https://github.com/tailer954/ComputerVision/blob/master/03_Boundary%20Following/Image%20Set.JPG)
 >

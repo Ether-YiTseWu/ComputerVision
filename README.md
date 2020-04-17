@@ -18,3 +18,8 @@ Make some projects relating to computer vision
 >
 ![](https://github.com/tailer954/ComputerVision/blob/master/03_Boundary%20Following/Image%20Set.JPG)
 >
+### [04：Image Features](https://github.com/tailer954/ComputerVision/blob/master/04_Image%20Features/img_features.m)
+>
+>
+![](https://github.com/tailer954/ComputerVision/blob/master/04_Image%20Features/Image%20Features.JPG)
+>

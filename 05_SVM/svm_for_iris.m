@@ -1,12 +1,17 @@
 clear; clc;
 
+% Load filr
 load fisheriris
 
+% Separate features from fisheriris
 idx = ~strcmp(species, 'setosa');
 feature = meas(:, 3:4);
+
+% Use svm function
 classifier = fitcsvm(feature, idx);
 supportVector = classifier.SupportVectors;
 
+% Plot
 figure(1); title("Iris Data")
 for i = min(feature(:,1)):0.05:max(feature(:,1))+1
     for j = min(feature(:,2)):0.05:max(feature(:,2))+1
